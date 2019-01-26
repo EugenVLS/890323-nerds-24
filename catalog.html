@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="#" width="" height="" alt="Логотип студии Нердс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a class="current" href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="user-navigation">
+      <li><a class="basket-link" href="#">Корзина</a></li>
+    </ul>
+    <p class="catalog-text">Магазин готовых шаблонов</p>
+  </header>
+  <main class="container">
+    <h1 class="visually-hidden">Каталог Нердс</h1>
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <div class="grid-filter">
+          <p class="filter-label">СЕТКА:</p>
+          <ul class="grid-list" id="grid-list-id">
+            <li class="filter-option grid-option">
+              <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="input-radio-adaptive" checked>
+              <label for="input-radio-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option grid-option">
+              <input class="visually-hidden" type="radio" name="grid" value="fix" id="input-radio-fix">
+              <label for="input-radio-fix">Фиксированная</label>
+            </li>
+            <li class="filter-option grid-option">
+              <input class="visually-hidden" type="radio" name="grid" value="elastic" id="input-radio-elastic">
+              <label for="input-radio-elastic">Резиновая</label>
+            </li>
+          </ul>
+        </div>
+        <div class="features-filter">
+          <p class="filter-label">ОСОБЕННОСТИ:</p>
+          <ul class="features-list" id="features-list-id">
+            <li class="filter-option features-option">
+              <input class="visually-hidden" type="checkbox" name="features" value="slider" id="input-checkbox-slider">
+              <label for="input-checkbox-slider">Слайдер</label>
+            </li>
+            <li class="filter-option features-option">
+              <input class="visually-hidden" type="checkbox" name="features" value="features-block" id="input-checkbox-features-block">
+              <label for="input-checkbox-features-block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option features-option">
+              <input class="visually-hidden" type="checkbox" name="features" value="news" id="input-checkbox-news">
+              <label for="input-checkbox-news">Новости</label>
+            </li>
+            <li class="filter-option features-option">
+              <input class="visually-hidden" type="checkbox" name="features" value="galary" id="input-checkbox-galary">
+              <label for="input-checkbox-galary">Галерея</label>
+            </li>
+            <li class="filter-option features-option">
+              <input class="visually-hidden" type="checkbox" name="features" value="basket" id="input-checkbox-basket">
+              <label for="input-checkbox-basket">Корзина</label>
+            </li>
+          </ul>
+        </div>
+        <input class="button filter-btn" type="submit" value="Показать">
+      </form>
+    </section>
+    <section class="catalog">
+      <ul class="catalog-list">
+          <li class="catalog-item">
+              <p class="item-image">
+                  <img src="#" width="" height="" alt="СЕДОНА">
+                </p>
+                <div class="item-hover">
+                  <p class="item-name">SEDONA</p>
+                  <p class="item-describing">Информационный сайт 
+                      для туристов</p>
+                  <a class="button buy-btn" href="#">9 900 руб.</a>
+                </div> 
+          </li>
+          <li class="catalog-item current-item">
+              <p class="item-image">
+                  <img src="#" width="" height="" alt="Pink App">
+                </p>
+                <div class="item-hover">
+                  <p class="item-name">PINK APP</p>
+                  <p class="item-describing">Продуктовый лендинг
+                      приложения для iOS и Android</p>
+                  <a class="button buy-btn" href="#">9 900 руб.</a>
+                </div> 
+          </li>
+          <li class="catalog-item">
+              <p class="item-image">
+                  <img src="#" width="" height="" alt="барбершоп">
+                </p>
+                <div class="item-hover">
+                  <p class="item-name">BARBERSHOP</p>
+                  <p class="item-describing">Сайт парикмахерской</p>
+                  <a class="button buy-btn" href="#">9 900 руб.</a>
+                </div> 
+          </li>
+          <li class="catalog-item">
+              <p class="item-image">
+                  <img src="#" width="" height="" alt="Мишка">
+                </p>
+                <div class="item-hover">
+                  <p class="item-name">MISHKA</p>
+                  <p class="item-describing">Интернет-магазин вязаных игрушек</p>
+                  <a class="button buy-btn" href="#">9 900 руб.</a>
+                </div> 
+          </li>
+          <li class="catalog-item">
+              <p class="item-image">
+                  <img src="#" width="" height="" alt="A PLUS">
+                </p>
+                <div class="item-hover">
+                  <p class="item-name">A PLUS</p>
+                  <p class="item-describing">Лендинг курсов повышения квалификации</p>
+                  <a class="button buy-btn" href="#">9 900 руб.</a>
+                </div> 
+          </li>
+          <li class="catalog-item">
+              <p class="item-image">
+                  <img src="#" width="" height="" alt="Кваст">
+                </p>
+                <div class="item-hover">
+                  <p class="item-name">КВАСТ</p>
+                  <p class="item-describing">Промо-сайт производителя
+                      крафтового кваса</p>
+                  <a class="button buy-btn" href="#">9 900 руб.</a>
+                </div> 
+          </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="social-list">
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+    <p class="appeal-text">Давайте дружить, это выгодно!</p>
+    <p class="sale-text">Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+</body>
+
+</html>
