@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  background-color: rgb(238, 238, 238);
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.catalog-text {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.filter-label,
+.item-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.grid-list,
+.features-list {
+  list-style: none;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-btn {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.product-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.product-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.item-describing {
+  color: #666666;
+}
+
+.buy-btn {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+}
+
+.order-btn-site {
+  background-color: #fb565a;
+}
+
+.order-btn-site:hover,
+.order-btn-site:focus,
+.buy-btn:hover,
+.buy-btn:focus {
+  background-color: #e74246;
+}
+
+.order-btn-site:active,
+.buy-btn:active {
+  background-color: #d7373b;
+  box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+a[class^="order-btn"] {
+  /*Разобраться почему не работает*/
+  color: #ffffff;
+}
+
+.order-btn-app,
+.order-btn-presentation,
+.order-btn-site {
+  color: #ffffff;
+}
+
+.order-btn-app {
+  background-color: #00ca74;
+}
+
+.order-btn-app:hover,
+.order-btn-app:focus {
+  background-color: #00bc6c;
+}
+
+.order-btn-app:active {
+  background-color: #00aa62;
+  box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-btn-presentation {
+  background-color: #efc84a;
+}
+
+.order-btn-presentation:hover,
+.order-btn-presentation:focus {
+  background-color: #eab534;
+}
+
+.order-btn-presentation:active {
+  background-color: #e5a722;
+  box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.appeal-text {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.sale-text {
+  line-height: 22px;
+}
+
+.modal-request {
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

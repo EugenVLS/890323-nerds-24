@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +21,10 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <ul class="user-navigation">
+        <li><a class="basket-link" href="#">Корзина</a></li>
+      </ul>
     </nav>
-    <ul class="user-navigation">
-      <li><a class="basket-link" href="#">Корзина</a></li>
-    </ul>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Главная страница Нердс</h1>
@@ -32,29 +35,29 @@
           <img src="img/img-sites.png" width="300" height="146" alt="Сайты">
           <h3>ВЭБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button order-btn-site" href="#">Заказать</a>
         </li>
         <li class="product-item">
-          <img src="img/img-application.png" width="300" height="146" alt="Приложения">
+          <img src="img/img-app.png" width="300" height="146" alt="Приложения">
           <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button order-btn-app" href="#">Заказать</a>
         </li>
         <li class="product-item">
           <img src="img/img-presentation.png" width="300" height="146" alt="Презентации">
           <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете,
             насколько вы изумительны!</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button order-btn-presentation" href="#">Заказать</a>
         </li>
       </ul>
     </section>
   </main>
   <footer class="main-footer">
     <ul class="social-list">
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
     <p class="appeal-text">Давайте дружить, это выгодно!</p>
     <p class="sale-text">Скидка 10% для друзей из социальных сетей.</p>

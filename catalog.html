@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,11 +21,10 @@
         <li><a class="current" href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <ul class="user-navigation">
+        <li><a class="basket-link" href="#">Корзина</a></li>
+      </ul>
     </nav>
-    <ul class="user-navigation">
-      <li><a class="basket-link" href="#">Корзина</a></li>
-    </ul>
-
   </header>
   <main class="container">
     <h1 class="visually-hidden">Каталог Нердс</h1>
@@ -77,7 +79,7 @@
       </form>
     </section>
     <section class="catalog">
-        <h2 class="visually-hidden">Секция каталога</h2>
+      <h2 class="visually-hidden">Секция каталога</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <p class="item-image">
@@ -147,9 +149,9 @@
   </main>
   <footer class="main-footer">
     <ul class="social-list">
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li><a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li><a class="social-button inst" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
     <p class="appeal-text">Давайте дружить, это выгодно!</p>
     <p class="sale-text">Скидка 10% для друзей из социальных сетей.</p>
