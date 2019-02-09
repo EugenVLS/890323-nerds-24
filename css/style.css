@@ -9,6 +9,12 @@ body {
   color: #000000;
 }
 
+.site-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,11 +24,14 @@ a {
   line-height: 30px;
   font-weight: 500;
   background-color: rgb(238, 238, 238);
+  display: flex;
 }
 
 .site-navigation,
 .user-navigation {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation a,
@@ -42,7 +51,11 @@ a {
   line-height: 55px;
   font-weight: 500;
 }
+.catalog-columns {
+  display: flex;
+}
 
+.appeal-text
 .filter-label,
 .item-name {
   font-size: 18px;
@@ -64,10 +77,17 @@ a {
 
 .catalog-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .products-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .product-item h3 {
@@ -169,6 +189,10 @@ a[class^="order-btn"] {
 
 .sale-text {
   line-height: 22px;
+}
+
+.main-footer {
+  display: flex;
 }
 
 .modal-request {
