@@ -9,8 +9,11 @@ body {
   color: #000000;
 }
 
-.site-wrapper {
-  width: 1200px;
+.main-header {
+  background-color: rgb(238, 238, 238);
+}
+.container {
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -23,8 +26,8 @@ a {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  background-color: rgb(238, 238, 238);
   display: flex;
+  justify-content: space-between;
 }
 
 .main-header-logo:hover,
@@ -41,11 +44,18 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .site-navigation a,
 .user-navigation a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 24px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .site-navigation a:hover,
@@ -60,22 +70,45 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
+.current {
+  border-bottom: 2px solid #fb565a;
+}
+
+.product-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
 .catalog-text {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .catalog-columns {
   display: flex;
+  justify-content: space-between;
 }
 
-.appeal-text
+.catalog-item {
+  width: 360px;
+}
+
+.item-image {
+  margin: 0;
+}
+.appeal-text,
 .filter-label,
 .item-name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
 }
 
 .grid-list,
@@ -83,6 +116,12 @@ a {
   list-style: none;
   line-height: 20px;
   color: #283136;
+  margin: 0;
+  padding: 0;
+}
+
+.filters {
+  width: 260px;
 }
 
 .filter-btn {
@@ -104,12 +143,15 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 760px;
 }
 
 .products-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -203,6 +245,9 @@ a {
 
 .social-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 140px;
 }
 
 .appeal-text {
@@ -220,6 +265,9 @@ a {
   display: flex;
 }
 
+.footer-wrapper {
+  display: flex;
+}
 .modal-request {
   display: none;
 }
