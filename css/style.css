@@ -27,6 +27,15 @@ a {
   display: flex;
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -44,6 +53,11 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0,0,0,0.3);
 }
 
 .catalog-text {
@@ -73,8 +87,18 @@ a {
 
 .filter-btn {
   color: #000000;
+  background-color: #eeeeee;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: #dfdfdf;
 }
 
+.filter-btn:active {
+  color: rgba(0,0,0,0.3);
+  box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
+  background-color: #d5d5d5;
+}
 .catalog-list {
   list-style: none;
   display: flex;
@@ -132,20 +156,18 @@ a {
   background-color: #e74246;
 }
 
-.order-btn-site:active,
 .buy-btn:active {
   background-color: #d7373b;
   box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-a[class^="order-btn"] {
-  /*Разобраться почему не работает*/
-  color: #ffffff;
+.order-btn-site:active {
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
+  box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.order-btn-app,
-.order-btn-presentation,
-.order-btn-site {
+[class*="order-btn"] {
   color: #ffffff;
 }
 
@@ -160,6 +182,7 @@ a[class^="order-btn"] {
 
 .order-btn-app:active {
   background-color: #00aa62;
+  color: rgba(255,255,255,0.3);
   box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -174,6 +197,7 @@ a[class^="order-btn"] {
 
 .order-btn-presentation:active {
   background-color: #e5a722;
+  color: rgba(255,255,255,0.3);
   box-shadow: inset 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -189,6 +213,7 @@ a[class^="order-btn"] {
 
 .sale-text {
   line-height: 22px;
+  color: #444444;
 }
 
 .main-footer {
