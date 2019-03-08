@@ -45,32 +45,32 @@ body {
 }
 
 .slider-item:nth-child(1) {
-    background: url("../img/slide1.png") no-repeat 93% 18px;
+  background: url("../img/slide1.png") no-repeat 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-    background: url("../img/slide2.png") no-repeat 100% 0;
+  background: url("../img/slide2.png") no-repeat 100% 0;
 }
 
 .slider-item:nth-child(3) {
-    background: url("../img/slide3.png") no-repeat 100% 20px;
+  background: url("../img/slide3.png") no-repeat 100% 20px;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
-    display: block;
+#product-1:checked~.slider-list .slider-item:nth-child(1) {
+  display: block;
 }
 
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
-    display: block;
-  }
-  
-  #product-3:checked ~ .slider-list .slider-item:nth-child(3) {
-    display: block;
-  }
- 
-  #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+#product-2:checked~.slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked~.slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked~.slider-controls .slider-controls-item--1::before,
+#product-2:checked~.slider-controls .slider-controls-item--2::before,
+#product-3:checked~.slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -102,62 +102,60 @@ body {
 }
 
 .slider-item-button {
-    display: block;
-    width: 240px;
-    padding: 16px 0;
-  
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #fb565a;
-    border-radius: 3px;
-    border: none;
-  }
+  display: block;
+  width: 240px;
+  padding: 16px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
 
 .slider-controls label {
-    position: relative;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    padding: 8px;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
 
-    border-radius: 50%;
-    cursor: pointer;
+  border-radius: 50%;
+  cursor: pointer;
 
 }
 
 .slider-controls label::after {
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    z-index: 1;
-    width: 18px;
-    height: 18px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
 
-    background: #ffffff;
+  background: #ffffff;
 
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-.slider-controls .active::before {
-
-}
+.slider-controls .active::before {}
 
 .slider-controls {
-    position: absolute;
-    left: 50%;
-    bottom: 104px;
-    z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 2;
 
-    width: 160px;
-    height: 18px;
+  width: 160px;
+  height: 18px;
 
-    text-align: center;
-    font-size: 0;
-    transform: translateX(-50%);
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
 a {
@@ -374,6 +372,9 @@ img {
   margin-bottom: 13px;
 }
 
+.features {
+  margin-bottom: 80px;
+}
 .grid-list,
 .features-list {
   line-height: 20px;
@@ -382,8 +383,24 @@ img {
   padding: 0;
 
   list-style: none;
-
+  
   color: #283136;
+}
+
+.features-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.features-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  background-image: url("../img/list-marker.png")
 }
 
 .grid-filter {
@@ -531,10 +548,14 @@ img {
 .product-item p {
   margin: 0;
   margin-top: 15px;
+  padding-right: 20px;
+}
+
+.product-item p,
+.about-text {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  padding-right: 20px;
 }
 
 .button {
@@ -708,11 +729,47 @@ img {
   flex-direction: column;
 }
 
-.modal-request h2 {
+[class*="about-text"] {
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+.modal-request h2,
+.about-text-big {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+}
+
+.about-text-big {
+  margin-bottom: 35px;
+}
+.about-text-medium {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text-number {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.about-text .percent {
+  font-size: 16px;
+}
+
+.about {
+  display: flex;
+  padding-top: 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.text-blocks {
+  display: flex;
+}
+
+.modal-request h2 {
   margin-bottom: 40px;
 }
 
