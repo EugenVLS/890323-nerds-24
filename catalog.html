@@ -36,8 +36,25 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <div class="grid-filter">
-              <p class="filter-label">СЕТКА:</p>
+              <fieldset class="filter-item">
+                <legend>Стоимость</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="grid-filter">
+              <fieldset class="filter-item">
+                  <p class="filter-label">Сетка:</p>
               <ul class="grid-list" id="grid-list-id">
                 <li class="filter-option grid-option">
                   <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="input-radio-adaptive">
@@ -52,9 +69,10 @@
                   <label for="input-radio-elastic">Резиновая</label>
                 </li>
               </ul>
+            </fieldset>
             </div>
             <div class="features-filter">
-              <p class="filter-label">ОСОБЕННОСТИ:</p>
+              <p class="filter-label">Особенности:</p>
               <ul class="features-list" id="features-list-id">
                 <li class="filter-option features-option">
                   <input class="visually-hidden" type="checkbox" name="features" value="slider" id="input-checkbox-slider">
@@ -83,6 +101,14 @@
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Секция каталога</h2>
+          <div class="sorting-block">
+              <p class="filter-label">Сортировать:</p>
+                <a href="#" class="sort">По цене</a>
+                <a href="#" class="sort">По типу</a>
+                <a href="#" class="sort">По названию</a>
+                <div class="triangle up"></div>
+                <div class="triangle down"></div>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <p class="item-image">
