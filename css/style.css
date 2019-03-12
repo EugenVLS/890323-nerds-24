@@ -614,7 +614,6 @@ img {
   background-color: #eeeeee;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
 }
 
 .max-price {
@@ -1197,7 +1196,9 @@ img {
 
 .map-content {
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0 auto;
 }
 
